@@ -17,10 +17,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView secret = findViewById(R.id.text_s);
+        secret.setText(Integer.toString(r));
     }
     public void send(View view){
         EditText ed_number = findViewById(R.id.ed_num);
         TextView message = findViewById(R.id.text_m);
+
 
         int number = Integer.parseInt(ed_number.getText().toString());
 
